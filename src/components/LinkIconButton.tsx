@@ -52,8 +52,9 @@ export const LinkIconButton: VFC<LinkIconButtonProps> = (props) => {
     >
       <button style={hover ? hoverStyles.button : styles.button} >
         {/* Add your button content here */}
-        Button
+        Get Started 👨‍⚕️
       </button>
+      
     </a>
   );
 };
@@ -91,28 +92,35 @@ bottomLeft: {
 bottomRight: {
 	...temp.container,
 	bottom: '150px',
-	right: '900px',
+	right: '840px',
 },
 button: {
-	background: 'linear-gradient(to bottom, #ff7e5f, #feb47b)',
+	background: 'blue',
 	border: '1px solid #ff7e5f',
-	borderRadius: '4px',
-	color: '#fff',
+  height: '70px',
+  width: '250px',
+  borderRadius: '4px',
+	color: 'white',
 	cursor: 'pointer',
 	padding: '10px 20px',
-	fontSize: '16px',
+	fontSize: '25px',
 	fontWeight: 'bold',
 	outline: 'none',
 	opacity: '1',
 	boxShadow: '0 2px 5px rgba(0, 0, 0, 0.2)',
-	transition: 'transform 0.3s ease-in-out', // Add transition for smooth effect
+	// transition: 'transform 0.3s ease-in-out', // Add transition for smooth effect
 },
 };
 
 const hoverStyles: Styles = {
 	button: {
 	...styles.button,
-	transform: 'scale(1.5)', // Increase the scale on hover
+	// transform: 'scale(1.5)', // Increase the scale on hover
+  background:'white',
+  color:'blue',
+  transition: 'all 0.5s ease-in-out'
 	}
 }
+
+
   
