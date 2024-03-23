@@ -9,9 +9,9 @@ export const App: VFC = () => {
 	return (
 		<div className={styles.container}>
 			<TCanvas userName="Arnab"/>
-			<LinkIconButton imagePath="/assets/icons/github.svg" linkPath="https:www.google.com"/>
-			{/* <button> Button </button> */}
-		</div>
+			<LinkIconButton imagePath="/assets/icons/github.svg" linkPath="http://localhost:3000"/>
+			{/* <button className={styles.button}> Get Started </button> */}
+		</div> 
 	)
 }
 
@@ -20,5 +20,5 @@ const styles = {
 		position: relative;
 		width: 100vw;
 		height: 100vh;
-	`
+	`,
 }

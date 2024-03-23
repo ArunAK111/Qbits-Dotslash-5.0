@@ -21,11 +21,11 @@ export const TCanvas: VFC<TCanvasProps> = ({ userName }) => {
 				<Background />
 				<Lense />
 				<TextPlane
-					text={[`Helloo ${userName}`, 'Good Dayyy!']}
+					text={[`Welcome 🙏`, 'Have a Nice Day!']}
 					vertexShader={enVertexShader}
 					fragmentShader={enFragmentShader}
 				/>
-				<TextPlane text={[`ನಮಸ್ಕಾರ ${userName} 🙏 `, 'ಶುಭದಿನ!']} vertexShader={jpVertexShader} fragmentShader={jpFragmentShader} />
+				<TextPlane text={[`ಸ್ವಾಗತ 🙏 `, 'ದಿನವು ಒಳೆೣಯದಾಗಲಿ!']} vertexShader={jpVertexShader} fragmentShader={jpFragmentShader} />
 			</Suspense>
 			{/* helper */}
 			{/* <Stats /> */}

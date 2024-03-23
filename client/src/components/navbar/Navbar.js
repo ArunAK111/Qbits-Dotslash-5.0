@@ -42,7 +42,7 @@ const Navbar = () => {
                         className="main_logo"
                         alt="logo"
                     />
-                    vital
+                    Health Rythm
                 </div>
 
                 {!isAuthenticated ? (
