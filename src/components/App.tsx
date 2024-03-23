@@ -6,7 +6,7 @@ import { TCanvas } from './three/TCanvas';
 export const App: VFC = () => {
 	return (
 		<div className={styles.container}>
-			<TCanvas />
+			<TCanvas userName="Arnab"/>
 			<LinkIconButton imagePath="/assets/icons/github.svg" linkPath="https://www.google.com/" />
 		</div>
 	)
