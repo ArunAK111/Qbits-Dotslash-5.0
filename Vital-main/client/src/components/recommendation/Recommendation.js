@@ -47,7 +47,7 @@ const Recommendation = () => {
         const suffix = '.pdf';
         const id = originalUrl.substring(prefix.length);
 
-        return 'https://api.ods.od.nih.gov/dsld/s3/pdf/${id}${suffix}';
+        return `https://api.ods.od.nih.gov/dsld/s3/pdf/${id}${suffix}`;
     }
     const pdfUrl = 'https://api.ods.od.nih.gov/dsld/s3/pdf/14861.pdf';
 

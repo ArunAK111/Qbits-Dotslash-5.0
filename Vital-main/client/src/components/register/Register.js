@@ -49,8 +49,6 @@ const Register = () => {
 
         setRegisterIsLoading(true);
 
-        // encrypt password
-        // let hashedPassword = SHA256(formData.password).toString(enc.Hex);
         const user = {
             firstName: formData.firstName,
             lastName: formData.lastName,
@@ -95,6 +93,13 @@ const Register = () => {
     return (
         <div className="registration-form-container">
             <Navbar />
+            <div className="ripple-background">
+                <div className="circle xxlarge shade1"></div>
+                <div className="circle xlarge shade2"></div>
+                <div className="circle large shade3"></div>
+                <div className="circle medium shade4"></div>
+                <div className="circle small shade5"></div>
+            </div>
             <div className="registration-form-sub-container">
                 <h1>Create an account</h1>
                 <form className="registration-form" onSubmit={handleSubmit}>
@@ -103,7 +108,6 @@ const Register = () => {
                             <label htmlFor="firstName">First Name</label>
                             <TextField
                                 type="firstName"
-                                // variant="standard"
                                 onChange={handleChange}
                                 name="firstName"
                                 value={formData.firstName}
@@ -118,7 +122,6 @@ const Register = () => {
                             <TextField
                                 id="lastName"
                                 type="text"
-                                // variant="standard"
                                 onChange={handleChange}
                                 name="lastName"
                                 value={formData.lastName}
@@ -133,7 +136,6 @@ const Register = () => {
                             <TextField
                                 id="email"
                                 type="email"
-                                // variant="standard"
                                 onChange={handleChange}
                                 name="email"
                                 value={formData.email}
@@ -149,7 +151,6 @@ const Register = () => {
                             <TextField
                                 id="password"
                                 type="password"
-                                // variant="standard"
                                 onChange={handleChange}
                                 name="password"
                                 value={formData.password}
@@ -164,7 +165,6 @@ const Register = () => {
                             <TextField
                                 id="confirmPwd"
                                 type="password"
-                                // variant="standard"
                                 onChange={handleChange}
                                 name="confirmPwd"
                                 value={formData.confirmPwd}
@@ -194,7 +194,6 @@ const Register = () => {
                                 <Button type="submit" variant="contained" style={{ backgroundColor: "#ff395c", height: "40px" }}>Register</Button>
                             )}
                             <div className="register_have_account" onClick={() => navigate('/login')}><p>Already have an account?</p></div>
-                            {/* <Button variant="outlined" onClick={signIn} style={{ color: "black", borderColor: "black" }}>Sign In</Button> */}
                         </div>
                     </div>
                     {failed && (
