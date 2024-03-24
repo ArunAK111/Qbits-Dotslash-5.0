@@ -8,3 +8,5 @@ That is why we are introducing **Vital**, an **AI powered recommender for dietar
 
 ## What it does
 Vital uses users' personal physical information including their age, gender, allergies, and a text input where they write how they specifically want to improve their health. After entering those information, the users' information will be used to generate a list of the top recommended dietary supplement to take. This will help users save time, money, and confusion from spending time searching for which supplements to buy. The user will be able to enter new information to get supplement recommendations for different reasons and conditions.
+
+<img width="1440" alt="Screenshot 2024-03-24 at 9 49 33 AM" src="https://github.com/ArunAK111/Dotslash-5.0/assets/121341648/72ab5bd3-68b1-41e0-a081-fb135993adb2">
