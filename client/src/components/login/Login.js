@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { SHA256, enc } from "crypto-js";
-import "./Login.css"
+import "./Login.css";
 import { loginUserAPIMethod, createUserAPIMethod } from "../../api/auth";
 import { login } from "../../features/userSlice";
 import Lottie from "lottie-react";
@@ -49,8 +49,6 @@ const Login = () => {
         e.preventDefault();
         setLoginIsLoading(true);
 
-        // let hashedpassword = SHA256(formData.password).toString(enc.Hex);
-
         const user = {
             email: formData.email,
             password: formData.password
@@ -85,6 +83,13 @@ const Login = () => {
     return (
         <div className="login-form-container">
             <Navbar />
+            <div className="ripple-background">
+                <div className="circle xxlarge shade1"></div>
+                <div className="circle xlarge shade2"></div>
+                <div className="circle large shade3"></div>
+                <div className="circle medium shade4"></div>
+                <div className="circle small shade5"></div>
+            </div>
             <h1>Welcome back!</h1>
             <p>Hope you're feeling better today.</p>
             <div className="login-form-sub-container">
@@ -94,7 +99,6 @@ const Login = () => {
                         <TextField
                             id="email"
                             type="email"
-                            // variant="standard"
                             onChange={handleChange}
                             name="email"
                             value={formData.email}
@@ -109,7 +113,6 @@ const Login = () => {
                         <TextField
                             id="password"
                             type="password"
-                            // variant="standard"
                             onChange={handleChange}
                             name="password"
                             value={formData.password}
@@ -145,4 +148,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Login;

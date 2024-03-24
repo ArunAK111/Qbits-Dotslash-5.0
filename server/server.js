@@ -48,7 +48,7 @@ const PORT = process.env.PORT || 3001;
 
 NODE_ENV = "run"
 mongoose
-  .connect("mongodb+srv://arnabk1108:arnab@cluster0.w1aanlm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {})
+  .connect("mongodb+srv://ankoppal:TGpIgXLElnl8yaok@cluster0.jduwoti.mongodb.net/", {})
   .then(() => {
     if (NODE_ENV !== "test") {
       app.listen(PORT, () => console.log(`Server Port: ${PORT}`));

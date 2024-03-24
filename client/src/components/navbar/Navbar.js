@@ -42,7 +42,7 @@ const Navbar = () => {
                         className="main_logo"
                         alt="logo"
                     />
-                    Health Rythm
+                    HealthRythm
                 </div>
 
                 {!isAuthenticated ? (

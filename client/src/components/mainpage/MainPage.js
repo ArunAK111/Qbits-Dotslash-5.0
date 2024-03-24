@@ -156,20 +156,26 @@ const MainPage = () => {
     return (
         <div className='mainpage'>
             <Navbar />
-            <div className='retake'>
-                <Button variant="contained" onClick={() => { navigate(`/form/${userId}`) }} style={{ color: "white", borderColor: "black", fontWeight: "bold", backgroundColor: "black", borderRadius: '3rem', padding: "1rem", fontSize: "12px" }}>Retake the questionnaire!</Button>
-            </div>
             <h1>Your History</h1>
             <div className='mainpage_container'>
-                {console.log("records: ", records)}
                 {records.map((d) => (
-                    <div className='mainpage_form_data' onClick={() => navigate(`/mainpagedetails/${d._id}`)}>
-                        <img src={logo2} />
+                    <div className='mainpage_form_data' onClick={() => navigate(`/mainpagedetails/${d._id}`)} key={d._id}>
+                        <img src={logo2} alt="logo" />
                         <div className="mainpage_form_description">
                             Query: {d.description}
                         </div>
                     </div>
                 ))}
+            </div>
+            {/* Take Questionnaire Button */}
+            <div className='take_questionnaire'>
+                <Button variant="contained" onClick={() => { navigate(`/form/${userId}`) }} style={{ color: "white", borderColor: "black", fontWeight: "bold", backgroundColor: "black", borderRadius: '3rem', padding: "1rem", fontSize: "12px" }}>Take the questionnaire!</Button>
+            </div>
+            {/* Call Personal Doctor Button */}
+            <div className="call_doctor">
+                <Button variant="outlined" onClick={() => { window.location.href = 'tel:+1234567890' }} style={{ color: "black", borderColor: "black", fontWeight: "bold", borderRadius: '50%', padding: "1rem", fontSize: "12px", position: "fixed", bottom: "2rem", right: "2rem" }}>
+                    <span role="img" aria-label="phone">📞</span> Call Personal Doctor
+                </Button>
             </div>
         </div>
     )

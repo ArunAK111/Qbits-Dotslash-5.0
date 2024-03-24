@@ -2,6 +2,8 @@
 
 .question-page {
     display: flex;
+    font: serif;
+    font-size: 30 px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -20,6 +22,7 @@
 
 .options-container {
     display: flex;
+    font-size: 25px;
 }
 
 .other {
@@ -78,7 +81,7 @@
 }
 
 .selected {
-    outline: 2px solid black;
+    outline: 2.5px solid black;
     /* Add your preferred outline style */
 }
 
@@ -112,10 +115,13 @@
 
 .review {
     border-radius: 10px;
+    font: serif;
+    font-size: x-large;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .review button {

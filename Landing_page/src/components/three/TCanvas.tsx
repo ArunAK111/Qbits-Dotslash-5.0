@@ -8,11 +8,7 @@ import { Background } from './Background';
 import { Lense } from './Lense';
 import { TextPlane } from './TextPlane';
 
-interface TCanvasProps {
-	userName: string;
-}
-
-export const TCanvas: VFC<TCanvasProps> = ({ userName }) => {
+export const TCanvas: VFC = () => {
 	const OrthographicCamera = new THREE.OrthographicCamera(-1, 1, 1, -1, -10, 10)
 
 	return (
@@ -21,11 +17,11 @@ export const TCanvas: VFC<TCanvasProps> = ({ userName }) => {
 				<Background />
 				<Lense />
 				<TextPlane
-					text={[`Welcome 🙏`, 'Have a Nice Day!']}
+					text={['Hellooo', 'Good Dayyy!']}
 					vertexShader={enVertexShader}
 					fragmentShader={enFragmentShader}
 				/>
-				<TextPlane text={[`ಸ್ವಾಗತ 🙏 `, 'ದಿನವು ಒಳೆೣಯದಾಗಲಿ!']} vertexShader={jpVertexShader} fragmentShader={jpFragmentShader} />
+				<TextPlane text={['ನಮಸ್ಕಾರ 🙏 ', 'ಶುಭದಿನ!']} vertexShader={jpVertexShader} fragmentShader={jpFragmentShader} />
 			</Suspense>
 			{/* helper */}
 			{/* <Stats /> */}
