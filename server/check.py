@@ -2,6 +2,7 @@ import sys
 import json
 import numpy as np
 import pandas as pd
+
 from Bio_Epidemiology_NER.bio_recognizer import ner_prediction
 import pdb
 pd.set_option('display.max_colwidth', 20)
